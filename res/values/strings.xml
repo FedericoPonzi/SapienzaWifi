@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sapienza Wifi</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="title_activity_disconnect">Disconnect</string>
+    <string name="request_already_sent">Request alread sent. Wait for the response.</string>
+    <string name="disconnect_notification_title">Disconnect</string>
+    <string name="disconnect_notification_message">Disconnect form Sapienza Wifi"</string>
+    <!-- Error Activity: -->
+    <string name="main_text">%1$s</string>
+    <string name="title_activity_error">Error</string>
+    <string name="wrong_login">Error with the login details</string>
+    <string name="sapienza_not_found">Sapienza APN not found</string>
+    <string name="turn_on_wifi">Please turn on wifi</string>
+    <string name="timeout">Timeout: get closer to the AP and/or retry.</string>
+    <string name="already_connected">Already connected from another device.</string>
+    <!-- End of errors -->
+    <!-- Buttons -->
+    <string name="change_user">Change user</string>
+    <string name="button_wifi">Open Wifi</string>
+    <string name="button_retry">Retry</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_about">About</string>
+    <!-- End of buttons -->
+    <!-- About: -->
+    <string name="supervisor">Supervisor:</string>
+    <string name="developer">Developer:</string>
+    <!-- End of About -->
+    <!-- Settings Activity -->
+    <string name="welcome_dialog_title">Welcome</string>
+    <string name="welcome_dialog_message">This app let you connect and disconnect from Sapienza wifi more faster.\n To get started, please insert your matricola and password and restart the app.</string>
+    <!-- End of settings -->
+
+    <string name="title_activity_test_disconnect">TestDisconnect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="exit_btn">Exit</string>
+    <string name="action_settings">Settings</string>
+	<string name="restart_app">Restart the App</string>
+</resources>

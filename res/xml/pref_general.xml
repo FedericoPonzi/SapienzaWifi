@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="numberDecimal"
+        android:key="matricola"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Matricola" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textPassword"
+        android:key="password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Password" />
+
+    <Preference
+        android:layout="@layout/restart_button"
+        android:key="button_restart"
+        android:summary="Restart the app"
+        android:icon="@drawable/button_shape"
+        android:title="@string/restart_app" />
+
+</PreferenceScreen>

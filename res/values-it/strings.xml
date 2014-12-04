@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sapienza Wifi</string>
+    <string name="connecting">Connessione in corso&#8230;</string>
+    <string name="title_activity_disconnect">Disconnetti</string>
+    <string name="request_already_sent">Request alread sent. Wait for the response.</string>
+
+    <!-- Error Activity: -->
+    <string name="title_activity_error">Errore</string>
+    <string name="wrong_login">Errore con i dati di login.</string>
+    <string name="sapienza_not_found">Non sei connesso alla Sapienza!</string>
+    <string name="turn_on_wifi">Per usare Sapienza Wifi, accendi il wifi.</string>
+    <string name="timeout">Timeout: avvicinati all\' ap e/o riprova.</string>
+    <string name="already_connected">Risulti già connesso da un\'altro dispositivo.</string>
+    <!-- End of errors -->
+    <!-- Buttons -->
+    <string name="change_user">Cambia utente</string>
+    <string name="button_wifi">Apri Wifi</string>
+    <string name="button_retry">Riprova</string>
+    <string name="button_settings">Impostazioni</string>
+    <string name="button_about">About</string>
+    <!-- End of buttons -->
+    <!-- About: -->
+    <string name="supervisor">Supervisore:</string>
+    <string name="developer">Sviluppatore:</string>
+    <!-- End of About -->
+    <!-- Settings Activity -->
+    <string name="welcome_dialog_title">Benvenuto</string>
+    <string name="welcome_dialog_message">Questa app ti permette di connetterti e disconnetterti più in fretta a Sapienza WIFI.\n Per usarla, inserisci matricola e password e riavvia l\'app.</string>
+    <!-- End of settings -->
+    
+	<string name="restart_app">Riavvia l\' App</string>
+
+</resources>
