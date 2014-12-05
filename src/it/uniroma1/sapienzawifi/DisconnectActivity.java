@@ -66,7 +66,6 @@ public class DisconnectActivity extends ActionBarActivity {
 			logoutUrl = s.getString(LOGOUT_URL, null);
 			if (logoutUrl == null || ip == null || matricola == null) {
 				requestToDisconnect = null;
-				// TODO: devi per forza disconnetterti a mano.
 				setDisconnectedMessage(
 						getString(R.string.disconnect_null_values), true);
 			} else {
