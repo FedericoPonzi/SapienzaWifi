@@ -89,7 +89,7 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 
 		addPreferencesFromResource(R.xml.pref_general);
-		Preference button = (Preference) findPreference("button_restart");
+		Preference button = findPreference("button_restart");
 		button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
@@ -166,7 +166,7 @@ public class SettingsActivity extends PreferenceActivity {
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			addPreferencesFromResource(R.xml.pref_general);
-			Preference button = (Preference) findPreference("button_restart");
+			Preference button = findPreference("button_restart");
 			button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 				@Override
 				public boolean onPreferenceClick(Preference arg0) {
@@ -193,7 +193,7 @@ public class SettingsActivity extends PreferenceActivity {
 			@Override
 			public void onDismiss(DialogInterface dialog) {
 				SettingsActivity.this.pref.edit().putBoolean(
-						SettingsActivity.this.FIRST_RUN, true);
+						SettingsActivity.this.FIRST_RUN, false);
 				SettingsActivity.this.pref.edit().commit();
 			}
 		});

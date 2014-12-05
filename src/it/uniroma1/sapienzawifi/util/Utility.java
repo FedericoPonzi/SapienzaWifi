@@ -131,7 +131,7 @@ public class Utility
 
 		PendingIntent pIntent = PendingIntent.getActivity(mActivity, 0, disconnectIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
 
-		NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mActivity).setSmallIcon(R.drawable.launcher).setContentTitle(mActivity.getString(R.string.disconnect_notification_title)).setContentIntent(pIntent).setAutoCancel(true).setContentText(mActivity.getString(R.string.disconnect_notification_message)).setVibrate(mVibratePattern);
+		NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mActivity).setSmallIcon(R.drawable.ic_launcher).setContentTitle(mActivity.getString(R.string.disconnect_notification_title)).setContentIntent(pIntent).setAutoCancel(true).setContentText(mActivity.getString(R.string.disconnect_notification_message)).setVibrate(mVibratePattern);
 		NotificationManager mNotifyMgr = (NotificationManager) mActivity.getSystemService(Context.NOTIFICATION_SERVICE);
 		mNotifyMgr.notify(DisconnectActivity.NOTIFICATION_ID, mBuilder.build());
 

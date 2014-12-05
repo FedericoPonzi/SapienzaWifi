@@ -32,9 +32,11 @@
     <string name="welcome_dialog_message">This app let you connect and disconnect from Sapienza wifi more faster.\n To get started, please insert your matricola and password and restart the app.</string>
     <!-- End of settings -->
 
-    <string name="title_activity_test_disconnect">TestDisconnect</string>
     <string name="hello_world">Hello world!</string>
     <string name="exit_btn">Exit</string>
     <string name="action_settings">Settings</string>
-	<string name="restart_app">Restart the App</string>
+    <string name="disconnect_failed">Something went wrong. Please retry.</string>
+    <string name="disconnect_successful">You have been disconnect from SapienzaWifi. Have a nice day!</string>
+	<string name="disconnecting_message">We are disconnecting you from SapienzaWifi. Please wait.</string>
+    	<string name="restart_app">Restart the App</string>
 </resources>

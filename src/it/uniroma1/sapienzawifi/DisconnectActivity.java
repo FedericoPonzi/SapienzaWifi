@@ -27,14 +27,14 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class DisconnectActivity extends ActionBarActivity
-{
+public class DisconnectActivity extends ActionBarActivity {
 	// Lo sharedpref:
 	public static final String MY_PREFERENCES = "TEMPORARY_PREF";
 
 	// Usate per creare l' intent
 	@SuppressWarnings("unused")
-    private static final String LOG_TAG = DisconnectActivity.class.getCanonicalName();
+	private static final String LOG_TAG = DisconnectActivity.class
+			.getCanonicalName();
 	public static final String NEWSYSTEM = "NuovoSistema";
 
 	public static final int NOTIFICATION_ID = 42;
@@ -52,7 +52,6 @@ public class DisconnectActivity extends ActionBarActivity
 	private String matricola;
 	private String logoutUrl;
 	private RequestToDisconnect requestToDisconnect;
-
 
 	private Button mRetryBtn;
 	private Button mExitBtn;
@@ -107,7 +106,6 @@ public class DisconnectActivity extends ActionBarActivity
 				System.exit(0);
 			}
 		});
-
 		mRetryBtn.setOnClickListener(new OnClickListener()
 		{
 
@@ -117,7 +115,8 @@ public class DisconnectActivity extends ActionBarActivity
 				if (requestToDisconnect != null && requestToDisconnect.getStatus() != AsyncTask.Status.RUNNING)
 				{
 					mProgressBar.setVisibility(View.INVISIBLE);
-					mainTv.setVisibility(View.INVISIBLE);
+					mainTv.setText(R.string.disconnecting_message);
+					
 					requestToDisconnect.execute();
 					mRetryBtn.setClickable(false);
 				}
@@ -133,85 +132,71 @@ public class DisconnectActivity extends ActionBarActivity
 	 * 
 	 */
 
-	private class RequestToDisconnect extends AsyncTask<Void, Void, String>
-	{
+	private class RequestToDisconnect extends AsyncTask<Void, Void, String> {
 		AndroidHttpClient mClient;
 
 		ResponseHandler<String> handler;
 
 		@Override
-		protected void onPreExecute()
-		{
+		protected void onPreExecute() {
 			mClient = AndroidHttpClient.newInstance("");
 			handler = new BasicResponseHandler();
 			HttpProtocolParams.setUserAgent(mClient.getParams(), "Android");
 
-
 		}
 
 		@Override
-		protected String doInBackground(Void... params)
-		{
+		protected String doInBackground(Void... params) {
 			String url = logoutUrl;
 			Log.i("App", "Logout url: " + url);
-			try
-			{
+			try {
 				if (nuovoSistema) // TODO: controllare se worka.
 				{
 					HttpPost post = new HttpPost(url);
-					post.setEntity(new UrlEncodedFormEntity(Utility.getNameValuesDisconnet(matricola, ip, authenticator)));
+					post.setEntity(new UrlEncodedFormEntity(Utility
+							.getNameValuesDisconnet(matricola, ip,
+									authenticator)));
 
 					return mClient.execute(post, handler);
 
-				}
-				else
-				{
+				} else {
 					HttpGet get = new HttpGet(url);
 					return mClient.execute(get, handler);
 				}
 
-			}
-			catch (UnsupportedEncodingException e)
-			{
+			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
-			}
-			catch (ClientProtocolException exception)
-			{
+			} catch (ClientProtocolException exception) {
 				exception.printStackTrace();
-			}
-			catch (IOException exception)
-			{
+			} catch (IOException exception) {
 				exception.printStackTrace();
 			}
 			return null;
 		}
 
 		@Override
-		protected void onPostExecute(String result)
-		{
-			if (null != mClient) mClient.close();
+		protected void onPostExecute(String result) {
+			if (null != mClient)
+				mClient.close();
 
-			if (result != null && result.contains("logged out") || result.contains("<script>window.close();</script>"))
-			{
-				setDisconnectedMessage("Ti sei disconnesso con successo!", true);
+			if (result != null && result.contains("logged out")
+					|| result.contains("<script>window.close();</script>")) {
+				setDisconnectedMessage(
+						getString(R.string.disconnect_successful), true);
 
-			}
-			else
-			{
+			} else {
 				mRetryBtn.setClickable(true);
-				setDisconnectedMessage("Qualcosa è andato a storto. Riprova", false);
+				setDisconnectedMessage(getString(R.string.disconnect_failed),
+						false);
 			}
 		}
 	}
 
-	private void setDisconnectedMessage(String text, boolean disconnesso)
-	{
+	private void setDisconnectedMessage(String text, boolean disconnesso) {
 		mainTv.setText(text);
-		mainTv.setVisibility(View.VISIBLE);
 		mProgressBar.setVisibility(View.INVISIBLE);
 
-		if (disconnesso)
-		{
+		if (disconnesso) {
 			mRetryBtn.setVisibility(View.GONE);
 			mExitBtn.setVisibility(View.VISIBLE);
 		}

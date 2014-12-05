@@ -1,15 +1,17 @@
 package it.uniroma1.sapienzawifi;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ErrorActivity extends ActionBarActivity
-{
+public class ErrorActivity extends ActionBarActivity {
 	public final static String ERROR = "Error"; // Key
 	public final static String ERRORTIMEOUT = "TimeOut";
 	public final static String ERRORALREADYCONNECTED = "Gia Connesso";
@@ -23,52 +25,51 @@ public class ErrorActivity extends ActionBarActivity
 	Button mButtonWifi;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState)
-	{
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent received = getIntent(); // It is supposed to be never null...
 		// Well, never know:
-		if (received != null)
-		{
+
+		if (received != null) {
 			String errorType = received.getExtras().getString(ERROR);
 			// Since Android uses java 1.6, i need to use else if statements.
-			if (errorType.equals(ERRORALREADYCONNECTED))
-			{
+			if (errorType.equals(ERRORALREADYCONNECTED)) {
 				setContentView(R.layout.error_already_connected);
-			}
-			else if (errorType.equals(ERRORTIMEOUT))
-			{
+			} else if (errorType.equals(ERRORTIMEOUT)) {
 				setContentView(R.layout.error_timeout);
-			}
-			else if (errorType.equals(ERRORWRONGAPN))
-			{
+			} else if (errorType.equals(ERRORWRONGAPN)) {
 				setContentView(R.layout.error_conn_to_sap);
-			}
-			else if (errorType.equals(ERRORWITHLOGIN))
-			{
+			} else if (errorType.equals(ERRORWITHLOGIN)) {
 				setContentView(R.layout.error_login);
-			}
-			else if (errorType.equals(ERRORWITHWIFI))
-			{
+			} else if (errorType.equals(ERRORWITHWIFI)) {
 				setContentView(R.layout.error_wifi_disabled);
 			}
 		}
 	}
 
-	public void buttonWifiClicked(View view)
-	{
+	public void buttonAboutClicked(View v) {
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		LayoutInflater li = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+		builder.setCustomTitle(li.inflate(R.layout.about_dialog_title, null))
+				.setView(li.inflate(R.layout.about_dialog, null));
+		AlertDialog dialog = builder.create();
+		dialog.show();
+	}
+
+	public void buttonWifiClicked(View view) {
 		startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
 		finish();
 	}
-	
-	public void buttonRetryClicked(View view)
-	{
+
+	public void buttonRetryClicked(View view) {
 		Intent retry = new Intent(this, MainActivity.class);
 		retry.putExtra("Retry", true);
 		startActivity(retry);
 	}
-	public void buttonSettingsClicked(View view)
-	{
-		startActivity(new Intent(this,SettingsActivity.class));
+
+	public void buttonSettingsClicked(View view) {
+		startActivity(new Intent(this, SettingsActivity.class));
 	}
 }

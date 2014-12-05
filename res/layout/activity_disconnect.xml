@@ -19,41 +19,67 @@
         android:contentDescription="@string/app_name"
         android:src="@drawable/sapienzawifilogo" />
 
-    <TextView
-        android:id="@+id/main_tv"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:visibility="invisible" />
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="10dp" >
 
-    <ProgressBar
-        android:id="@+id/progressBar_disconnetti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="39dp"
-        android:layout_marginTop="39dp" />
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnecting_message"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_disconnetti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="39dp"
+            android:layout_marginTop="39dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bottone_disconnetti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="@string/button_retry"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="@string/exit_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/bottone_disconnetti"
+        android:id="@+id/button_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_shape"
-        android:text="@string/button_retry"
+        android:text="@string/button_about"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/exit_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_shape"
-        android:text="@string/exit_btn"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:visibility="invisible" />
 
 </LinearLayout>

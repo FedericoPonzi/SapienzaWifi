@@ -1382,19 +1382,19 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f070003;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f080032;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f080033;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f080033;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f080034;
         public static final int abc_input_method_navigation_guard=0x7f080003;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f080034;
-        public static final int abc_primary_text_disable_only_material_light=0x7f080035;
-        public static final int abc_primary_text_material_dark=0x7f080036;
-        public static final int abc_primary_text_material_light=0x7f080037;
-        public static final int abc_search_url_text=0x7f080038;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f080035;
+        public static final int abc_primary_text_disable_only_material_light=0x7f080036;
+        public static final int abc_primary_text_material_dark=0x7f080037;
+        public static final int abc_primary_text_material_light=0x7f080038;
+        public static final int abc_search_url_text=0x7f080039;
         public static final int abc_search_url_text_normal=0x7f080000;
         public static final int abc_search_url_text_pressed=0x7f080002;
         public static final int abc_search_url_text_selected=0x7f080001;
-        public static final int abc_secondary_text_material_dark=0x7f080039;
-        public static final int abc_secondary_text_material_light=0x7f08003a;
+        public static final int abc_secondary_text_material_dark=0x7f08003a;
+        public static final int abc_secondary_text_material_light=0x7f08003b;
         public static final int accent_material_dark=0x7f08000f;
         public static final int accent_material_light=0x7f08000e;
         public static final int background_floating_material_dark=0x7f080006;
@@ -1453,6 +1453,7 @@ containing a value of this type.
         public static final int secondary_text_disabled_material_light=0x7f080029;
         public static final int switch_thumb_normal_material_dark=0x7f080012;
         public static final int switch_thumb_normal_material_light=0x7f080013;
+        public static final int white=0x7f080032;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1663,9 +1664,9 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f060021;
         public static final int always=0x7f06000d;
         public static final int beginning=0x7f060012;
-        public static final int bottone_disconnetti=0x7f060042;
-        public static final int button_about=0x7f060048;
-        public static final int button_settings=0x7f060047;
+        public static final int bottone_disconnetti=0x7f060043;
+        public static final int button_about=0x7f060045;
+        public static final int button_settings=0x7f060048;
         public static final int button_wifi=0x7f06004c;
         public static final int checkbox=0x7f060029;
         public static final int collapseActionView=0x7f06000f;
@@ -1677,7 +1678,7 @@ containing a value of this type.
         public static final int dropdown=0x7f060011;
         public static final int edit_query=0x7f060033;
         public static final int end=0x7f060014;
-        public static final int exit_btn=0x7f060043;
+        public static final int exit_btn=0x7f060044;
         public static final int expand_activities_button=0x7f060022;
         public static final int expanded_menu=0x7f060028;
         public static final int home=0x7f060015;
@@ -1686,16 +1687,16 @@ containing a value of this type.
         public static final int ifRoom=0x7f06000c;
         public static final int image=0x7f060023;
         public static final int imageView1=0x7f06003f;
-        public static final int linearLayout1=0x7f060044;
+        public static final int linearLayout1=0x7f060040;
         public static final int listMode=0x7f060002;
         public static final int list_item=0x7f060025;
-        public static final int main_tv=0x7f060040;
+        public static final int main_tv=0x7f060041;
         public static final int middle=0x7f060013;
         public static final int never=0x7f06000b;
         public static final int none=0x7f060004;
         public static final int normal=0x7f060001;
-        public static final int progressBar1=0x7f060046;
-        public static final int progressBar_disconnetti=0x7f060041;
+        public static final int progressBar1=0x7f060047;
+        public static final int progressBar_disconnetti=0x7f060042;
         public static final int progress_circular=0x7f06001c;
         public static final int progress_horizontal=0x7f06001d;
         public static final int radio=0x7f06002b;
@@ -1718,7 +1719,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f060019;
         public static final int submit_area=0x7f06003c;
         public static final int tabMode=0x7f060003;
-        public static final int textView1=0x7f060045;
+        public static final int textView1=0x7f060046;
         public static final int title=0x7f060027;
         public static final int up=0x7f060016;
         public static final int useLogo=0x7f060005;
@@ -1851,7 +1852,7 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static final int abc_toolbar_collapse_description=0x7f0b0004;
-        public static final int action_settings=0x7f0b0029;
+        public static final int action_settings=0x7f0b0028;
         public static final int already_connected=0x7f0b001c;
         public static final int app_name=0x7f0b0010;
         public static final int button_about=0x7f0b0021;
@@ -1866,38 +1867,43 @@ containing a value of this type.
         public static final int change_user=0x7f0b001d;
         public static final int connecting=0x7f0b0011;
         public static final int developer=0x7f0b0023;
+        public static final int disconnect_failed=0x7f0b0029;
         public static final int disconnect_notification_message=0x7f0b0015;
         public static final int disconnect_notification_title=0x7f0b0014;
-        public static final int exit_btn=0x7f0b0028;
-        public static final int hello_world=0x7f0b0027;
+        public static final int disconnect_successful=0x7f0b002a;
+        /**  End of settings 
+         */
+        public static final int disconnecting_message=0x7f0b002b;
+        public static final int exit_btn=0x7f0b0027;
+        /**  End of settings 
+         */
+        public static final int hello_world=0x7f0b0026;
         /**  Error Activity: 
          */
         public static final int main_text=0x7f0b0016;
-        public static final int pref_default_display_name=0x7f0b0030;
-        public static final int pref_description_social_recommendations=0x7f0b002e;
+        public static final int pref_default_display_name=0x7f0b0032;
+        public static final int pref_description_social_recommendations=0x7f0b0030;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f0b0032;
+        public static final int pref_header_data_sync=0x7f0b0034;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f0b002c;
+        public static final int pref_header_general=0x7f0b002e;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f0b0035;
-        public static final int pref_ringtone_silent=0x7f0b0038;
-        public static final int pref_title_add_friends_to_messages=0x7f0b0031;
-        public static final int pref_title_display_name=0x7f0b002f;
-        public static final int pref_title_new_message_notifications=0x7f0b0036;
-        public static final int pref_title_ringtone=0x7f0b0037;
-        public static final int pref_title_social_recommendations=0x7f0b002d;
-        public static final int pref_title_sync_frequency=0x7f0b0033;
-        public static final int pref_title_system_sync_settings=0x7f0b0034;
-        public static final int pref_title_vibrate=0x7f0b0039;
+        public static final int pref_header_notifications=0x7f0b0037;
+        public static final int pref_ringtone_silent=0x7f0b003a;
+        public static final int pref_title_add_friends_to_messages=0x7f0b0033;
+        public static final int pref_title_display_name=0x7f0b0031;
+        public static final int pref_title_new_message_notifications=0x7f0b0038;
+        public static final int pref_title_ringtone=0x7f0b0039;
+        public static final int pref_title_social_recommendations=0x7f0b002f;
+        public static final int pref_title_sync_frequency=0x7f0b0035;
+        public static final int pref_title_system_sync_settings=0x7f0b0036;
+        public static final int pref_title_vibrate=0x7f0b003b;
         public static final int request_already_sent=0x7f0b0013;
-        /**  End of settings 
-         */
-        public static final int restart_app=0x7f0b002a;
+        public static final int restart_app=0x7f0b002c;
         public static final int sapienza_not_found=0x7f0b0019;
         /**  End of buttons 
  About: 
@@ -1910,10 +1916,7 @@ containing a value of this type.
         /**  Error Activity: 
          */
         public static final int title_activity_error=0x7f0b0017;
-        public static final int title_activity_settings=0x7f0b002b;
-        /**  End of settings 
-         */
-        public static final int title_activity_test_disconnect=0x7f0b0026;
+        public static final int title_activity_settings=0x7f0b002d;
         public static final int turn_on_wifi=0x7f0b001a;
         public static final int welcome_dialog_message=0x7f0b0025;
         /**  End of About 
@@ -1928,16 +1931,23 @@ containing a value of this type.
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
+
         
          */
         public static final int AppBaseTheme=0x7f0c00eb;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0c00ec;
         public static final int Base_TextAppearance_AppCompat=0x7f0c0098;
@@ -2084,6 +2094,17 @@ containing a value of this type.
     
          */
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c0090;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBar=0x7f0c00ed;
+        /**  ActionBar tabs text 
+ The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTabText=0x7f0c00ef;
+        /**  ActionBar title text 
+ The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTitleText=0x7f0c00ee;
         public static final int Platform_AppCompat=0x7f0c00c9;
         public static final int Platform_AppCompat_Dialog=0x7f0c00cb;
         public static final int Platform_AppCompat_Light=0x7f0c00ca;
@@ -2172,7 +2193,7 @@ containing a value of this type.
         public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0c00c0;
         public static final int Theme_AppCompat_Light_NoActionBar=0x7f0c00be;
         public static final int Theme_AppCompat_NoActionBar=0x7f0c00bd;
-        public static final int Theme_Settings=0x7f0c00ed;
+        public static final int Theme_Settings=0x7f0c00f0;
         public static final int ThemeOverlay_AppCompat=0x7f0c00c4;
         /**  Theme overlay that replaces the normal control color, which by default is the same as the
          secondary text color, with the primary text color. 
@@ -2256,7 +2277,7 @@ containing a value of this type.
          */
         public static final int Widget_AppCompat_Toolbar=0x7f0c0034;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c0035;
-        public static final int Widget_Toolbar=0x7f0c00ee;
+        public static final int Widget_Toolbar=0x7f0c00f1;
     }
     public static final class xml {
         public static final int pref_data_sync=0x7f050000;

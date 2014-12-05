@@ -4,7 +4,8 @@
     <string name="app_name">Sapienza Wifi</string>
     <string name="connecting">Connessione in corso&#8230;</string>
     <string name="title_activity_disconnect">Disconnetti</string>
-    <string name="request_already_sent">Request alread sent. Wait for the response.</string>
+    <string name="disconnect_notification_title">Disconnettiti</string>
+    <string name="disconnect_notification_message">Disconnettiti da SapienzaWifi</string>
 
     <!-- Error Activity: -->
     <string name="title_activity_error">Errore</string>
@@ -16,7 +17,7 @@
     <!-- End of errors -->
     <!-- Buttons -->
     <string name="change_user">Cambia utente</string>
-    <string name="button_wifi">Apri Wifi</string>
+    <string name="button_wifi">Apri Impostazioni Wifi</string>
     <string name="button_retry">Riprova</string>
     <string name="button_settings">Impostazioni</string>
     <string name="button_about">About</string>
@@ -30,6 +31,10 @@
     <string name="welcome_dialog_message">Questa app ti permette di connetterti e disconnetterti più in fretta a Sapienza WIFI.\n Per usarla, inserisci matricola e password e riavvia l\'app.</string>
     <!-- End of settings -->
     
+    <string name="disconnecting_message">Ti stiamo disconnettendo da SapienzaWifi. Attendi per favore.</string>
+    <string name="disconnect_failed">Qualcosa è andato a storto. Riprova</string>
+    <string name="disconnect_successful">Ti sei disconnesso con successo! Buona giornata</string>
 	<string name="restart_app">Riavvia l\' App</string>
+	
 
 </resources>

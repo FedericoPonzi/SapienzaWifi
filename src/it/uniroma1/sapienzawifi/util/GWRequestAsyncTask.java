@@ -64,7 +64,7 @@ public class GWRequestAsyncTask extends AsyncTask<String, Void, Void>
 			Log.i(TAG, "Eseguo la richiesta: ");
 			HttpResponse response = httpClient.execute(httpPost);
 			
-			//La loggo: TODO:controllo incrociato? serve? boh
+			//La loggo: TODO:controllo incrociato?
 			//Log.i(TAG, EntityUtils.toString(response.getEntity()));
 
 		}
