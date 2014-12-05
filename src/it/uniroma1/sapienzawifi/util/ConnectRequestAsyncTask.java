@@ -42,9 +42,9 @@ import android.util.Log;
  * @author FedericoPonzi
  */
 
-public class ConnectRequest extends AsyncTask<String, Void, String>
+public class ConnectRequestAsyncTask extends AsyncTask<String, Void, String>
 {
-	private static final String LOG_TAG = ConnectRequest.class.getCanonicalName();
+	private static final String LOG_TAG = ConnectRequestAsyncTask.class.getCanonicalName();
 
 	private static final boolean DEBUG = true;
 
@@ -66,7 +66,7 @@ public class ConnectRequest extends AsyncTask<String, Void, String>
 	private HttpParams httpParams; // Some httpparams, same for all requests.
 
 
-	public ConnectRequest(MainActivity mainActivity)
+	public ConnectRequestAsyncTask(MainActivity mainActivity)
 	{
 		super();
 		mActivity = mainActivity;

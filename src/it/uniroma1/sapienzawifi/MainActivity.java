@@ -1,6 +1,6 @@
 package it.uniroma1.sapienzawifi;
 
-import it.uniroma1.sapienzawifi.util.ConnectRequest;
+import it.uniroma1.sapienzawifi.util.ConnectRequestAsyncTask;
 import it.uniroma1.sapienzawifi.util.Utility;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity
 
 	SharedPreferences preferenze; // To access local saved settings
 
-	private ConnectRequest requestToConnect;
+	private ConnectRequestAsyncTask requestToConnect;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -36,7 +36,7 @@ public class MainActivity extends ActionBarActivity
 		setContentView(R.layout.activity_main);
 
 		preferenze = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-		requestToConnect = new ConnectRequest(this);
+		requestToConnect = new ConnectRequestAsyncTask(this);
 		// Se non sono presenti matricola o password, rimando alla settings
 		// activity:
 		if (!preferenze.contains("matricola") || !preferenze.contains("password"))

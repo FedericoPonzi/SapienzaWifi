@@ -1852,80 +1852,81 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static final int abc_toolbar_collapse_description=0x7f0b0004;
-        public static final int action_settings=0x7f0b0028;
-        public static final int already_connected=0x7f0b001c;
+        public static final int action_settings=0x7f0b0029;
+        public static final int already_connected=0x7f0b001d;
         public static final int app_name=0x7f0b0010;
-        public static final int button_about=0x7f0b0021;
-        public static final int button_retry=0x7f0b001f;
-        public static final int button_settings=0x7f0b0020;
-        public static final int button_wifi=0x7f0b001e;
+        public static final int button_about=0x7f0b0022;
+        public static final int button_retry=0x7f0b0020;
+        public static final int button_settings=0x7f0b0021;
+        public static final int button_wifi=0x7f0b001f;
         /**  End of errors 
  Buttons 
  End of errors 
  Buttons 
          */
-        public static final int change_user=0x7f0b001d;
+        public static final int change_user=0x7f0b001e;
         public static final int connecting=0x7f0b0011;
-        public static final int developer=0x7f0b0023;
-        public static final int disconnect_failed=0x7f0b0029;
+        public static final int developer=0x7f0b0024;
+        public static final int disconnect_failed=0x7f0b002a;
         public static final int disconnect_notification_message=0x7f0b0015;
         public static final int disconnect_notification_title=0x7f0b0014;
-        public static final int disconnect_successful=0x7f0b002a;
+        public static final int disconnect_null_values=0x7f0b0016;
+        public static final int disconnect_successful=0x7f0b002b;
         /**  End of settings 
          */
-        public static final int disconnecting_message=0x7f0b002b;
-        public static final int exit_btn=0x7f0b0027;
+        public static final int disconnecting_message=0x7f0b002c;
+        public static final int exit_btn=0x7f0b0028;
         /**  End of settings 
          */
-        public static final int hello_world=0x7f0b0026;
+        public static final int hello_world=0x7f0b0027;
         /**  Error Activity: 
          */
-        public static final int main_text=0x7f0b0016;
-        public static final int pref_default_display_name=0x7f0b0032;
-        public static final int pref_description_social_recommendations=0x7f0b0030;
+        public static final int main_text=0x7f0b0017;
+        public static final int pref_default_display_name=0x7f0b0033;
+        public static final int pref_description_social_recommendations=0x7f0b0031;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f0b0034;
+        public static final int pref_header_data_sync=0x7f0b0035;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f0b002e;
+        public static final int pref_header_general=0x7f0b002f;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f0b0037;
-        public static final int pref_ringtone_silent=0x7f0b003a;
-        public static final int pref_title_add_friends_to_messages=0x7f0b0033;
-        public static final int pref_title_display_name=0x7f0b0031;
-        public static final int pref_title_new_message_notifications=0x7f0b0038;
-        public static final int pref_title_ringtone=0x7f0b0039;
-        public static final int pref_title_social_recommendations=0x7f0b002f;
-        public static final int pref_title_sync_frequency=0x7f0b0035;
-        public static final int pref_title_system_sync_settings=0x7f0b0036;
-        public static final int pref_title_vibrate=0x7f0b003b;
+        public static final int pref_header_notifications=0x7f0b0038;
+        public static final int pref_ringtone_silent=0x7f0b003b;
+        public static final int pref_title_add_friends_to_messages=0x7f0b0034;
+        public static final int pref_title_display_name=0x7f0b0032;
+        public static final int pref_title_new_message_notifications=0x7f0b0039;
+        public static final int pref_title_ringtone=0x7f0b003a;
+        public static final int pref_title_social_recommendations=0x7f0b0030;
+        public static final int pref_title_sync_frequency=0x7f0b0036;
+        public static final int pref_title_system_sync_settings=0x7f0b0037;
+        public static final int pref_title_vibrate=0x7f0b003c;
         public static final int request_already_sent=0x7f0b0013;
-        public static final int restart_app=0x7f0b002c;
-        public static final int sapienza_not_found=0x7f0b0019;
+        public static final int restart_app=0x7f0b002d;
+        public static final int sapienza_not_found=0x7f0b001a;
         /**  End of buttons 
  About: 
  End of buttons 
  About: 
          */
-        public static final int supervisor=0x7f0b0022;
-        public static final int timeout=0x7f0b001b;
+        public static final int supervisor=0x7f0b0023;
+        public static final int timeout=0x7f0b001c;
         public static final int title_activity_disconnect=0x7f0b0012;
         /**  Error Activity: 
          */
-        public static final int title_activity_error=0x7f0b0017;
-        public static final int title_activity_settings=0x7f0b002d;
-        public static final int turn_on_wifi=0x7f0b001a;
-        public static final int welcome_dialog_message=0x7f0b0025;
+        public static final int title_activity_error=0x7f0b0018;
+        public static final int title_activity_settings=0x7f0b002e;
+        public static final int turn_on_wifi=0x7f0b001b;
+        public static final int welcome_dialog_message=0x7f0b0026;
         /**  End of About 
  Settings Activity 
  End of About 
  Settings Activity 
          */
-        public static final int welcome_dialog_title=0x7f0b0024;
-        public static final int wrong_login=0x7f0b0018;
+        public static final int welcome_dialog_title=0x7f0b0025;
+        public static final int wrong_login=0x7f0b0019;
     }
     public static final class style {
         /** 

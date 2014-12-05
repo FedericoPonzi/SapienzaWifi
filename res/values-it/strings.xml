@@ -6,7 +6,7 @@
     <string name="title_activity_disconnect">Disconnetti</string>
     <string name="disconnect_notification_title">Disconnettiti</string>
     <string name="disconnect_notification_message">Disconnettiti da SapienzaWifi</string>
-
+    <string name="disconnect_null_values">Sembra che tu non abbia effettuato il login da SapienzaWifi. Spegni il wifi e attendi 20 minuti.</string>    
     <!-- Error Activity: -->
     <string name="title_activity_error">Errore</string>
     <string name="wrong_login">Errore con i dati di login.</string>

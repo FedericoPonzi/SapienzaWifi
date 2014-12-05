@@ -68,7 +68,7 @@
                 android:text="@string/exit_btn"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                android:visibility="invisible" />
+                android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
 

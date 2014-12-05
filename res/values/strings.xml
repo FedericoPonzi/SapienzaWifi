@@ -7,6 +7,7 @@
     <string name="request_already_sent">Request alread sent. Wait for the response.</string>
     <string name="disconnect_notification_title">Disconnect</string>
     <string name="disconnect_notification_message">Disconnect form Sapienza Wifi"</string>
+    <string name="disconnect_null_values">Seems like you did not logged in from SapienzaWifi. Turno off wifi and wait 20 minutes.</string>
     <!-- Error Activity: -->
     <string name="main_text">%1$s</string>
     <string name="title_activity_error">Error</string>
